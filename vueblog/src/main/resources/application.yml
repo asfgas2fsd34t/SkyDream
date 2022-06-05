@@ -1,0 +1,23 @@
+#DataSource Config
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://43.138.31.92:3306/vueblog
+    url: jdbc:mysql://127.0.0.1:3306/vueblog
+    username: root
+    password: 123456
+  redis:
+    host: 127.0.0.1
+    password: 123456
+
+mybatis-plus:
+  mapper-locations:
+    - classpath:/mapper/*Mapper.xml
+markerhub:
+  jwt:
+    secret: f12325sdg35465sfsdf4325435
+    expire: 604800
+#    expire: 3
+    header: Authorization
